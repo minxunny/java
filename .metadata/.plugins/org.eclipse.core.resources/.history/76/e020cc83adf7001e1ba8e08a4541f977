@@ -1,0 +1,6 @@
+package am;
+
+public class Student {
+	//필드
+	String no;
+}

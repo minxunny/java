@@ -1,0 +1,14 @@
+package am;
+
+import java.util.*;
+
+public class Sub02 {
+	public static void run() {
+		boolean run=true;
+		Scanner scan=new Scanner(System.in);
+		
+		while(run) {
+			System.out.println("-----------------------------");
+		}//while
+	}//run
+}//class

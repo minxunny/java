@@ -1,0 +1,10 @@
+package am;
+
+import java.util.*;
+
+public class Sub02_1 {
+	public static void run() {
+		ArrayList<Student> students=new ArrayList<>();
+		students.add(new Student("100","홍길동","인천","010-2020-6060"))
+	}
+}

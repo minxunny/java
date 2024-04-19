@@ -1,0 +1,9 @@
+package pm;
+
+import java.io.*;
+
+public class Sub01 {
+	public static void run() {
+		File file=new File("c:/data/java/car.txt");
+	}
+}

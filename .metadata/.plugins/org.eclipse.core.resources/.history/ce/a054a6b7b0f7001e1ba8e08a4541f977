@@ -1,0 +1,9 @@
+package am;
+
+public class Score {
+	String name;
+	int kor;
+	int eng;
+	int mat;
+	
+}

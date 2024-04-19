@@ -1,0 +1,17 @@
+package ex05;
+
+import java.util.*;
+
+public class Main {
+	
+	public static void mail(String[] atgs) {
+		boolean run=true;
+		Scanner scan=new Scanner(System.in); //스캐너를 만들어서 스캔이란 곳에 저장이 되있는거고 스캐너를 쓰려면 스캔이란 이름으로 쓸 수가 있다.
+		while(run) {
+			System.out.println("================================-=======");
+			System.out.println("1.주소등록|2.주소조회|3.주소목록|4.주소삭제|0.종료");
+			System.out.println("================================-=======");
+		}//while
+		System.out.println("프로그램을 종료합니다.");
+	}//main
+}//class

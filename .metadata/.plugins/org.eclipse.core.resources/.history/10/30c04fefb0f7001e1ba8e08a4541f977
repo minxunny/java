@@ -1,0 +1,12 @@
+package am;
+
+public class Score {
+	//필드(속성)
+	String name;
+	int kor;
+	int eng;
+	int mat;
+	
+	//생성자
+	
+}

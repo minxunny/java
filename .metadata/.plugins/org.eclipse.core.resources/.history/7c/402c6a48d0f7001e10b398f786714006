@@ -1,0 +1,24 @@
+package pm;
+
+public class Sale { //public이 없으면 pm에서만 쓸 수 있고 있으면 am에서도 쓸 수 있음! 그 뜻임
+	//필드
+	String code;
+	String name;
+	int price;
+	int qnt;
+	int sum;
+	
+	//생성자
+	
+	//금액을 구하는 메서드
+	public  int sum() { //14,15줄 int부분이 같아야함!
+		int sum=price*qnt;
+		return sum;
+	}
+	
+	//내용을 가로로 출력하는 메서드
+	public void print_land() {
+		System.out.println("%s\t%s\t%d\t%d\t%d\n",code,name,price,qnt,sum());
+	}
+
+}

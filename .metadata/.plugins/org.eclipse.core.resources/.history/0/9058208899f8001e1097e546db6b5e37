@@ -1,0 +1,22 @@
+package pm;
+
+import java.io.*;
+import java.util.*;
+
+public class Sub01 {
+	public static void run() {
+		File file=new File("c:/data/java/car.txt");
+		try {
+			BufferedReader reader=new BufferedReader(new FileReader(file)); //파일에서 읽어온 양식을 버퍼에 넣어준것
+			String line="";
+			StringTokenizer st=null;
+			
+			while((line=reader.readLine())!= null) {
+				st=new StringTokenizer(line,"");
+			}
+		}catch(Exception e) { //try에서 파일을 못 읽어들일때
+			System.out.println("오류:"+e.toString());
+		}
+	}
+}
+

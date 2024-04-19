@@ -1,0 +1,5 @@
+package product;
+
+public class ProductDAO { //DAO=데이터에 접근하는 객체
+	
+}

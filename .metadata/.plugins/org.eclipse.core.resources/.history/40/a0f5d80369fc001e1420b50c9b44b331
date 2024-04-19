@@ -1,0 +1,9 @@
+package product;
+
+public class ProductVO { //자바빈=VO
+	private String code;
+	private String name;
+	private int price;
+	
+	
+}

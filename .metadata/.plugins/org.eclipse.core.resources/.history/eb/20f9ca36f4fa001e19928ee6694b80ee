@@ -1,0 +1,13 @@
+package sale;
+
+import java.util.*;
+
+public class SaleDAO {
+	//매출목록
+	public ArrayList<Sale> list(){
+		ArrayList<Sale> array=new ArrayList<Sale>();
+		
+		return array;
+	}
+
+}

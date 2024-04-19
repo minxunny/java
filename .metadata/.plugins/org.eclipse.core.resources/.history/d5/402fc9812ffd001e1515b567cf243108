@@ -1,0 +1,9 @@
+package sale;
+import java.util.*;
+
+public class SelVO { //자바빈=VO
+	private int seq;
+	private String code;
+	private Date sale_date;
+	private int qnt;
+}

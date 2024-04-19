@@ -1,0 +1,11 @@
+package am;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Sub03.run();
+
+	}//method
+
+}//class

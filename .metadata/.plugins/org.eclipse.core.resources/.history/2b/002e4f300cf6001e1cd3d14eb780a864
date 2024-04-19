@@ -1,0 +1,14 @@
+package am;
+
+public class Sub01 {
+	public static void run() {
+		System.out.println("성적관리프로그램");
+		boolean stop=false; //while(!stop) = while(stop!=false) 같음! 기사문제에 이런거 많이 나옴!
+		while(!stop) {
+			System.out.println("------------------------------");
+			System.out.println("1.성적등록|2.성적출력|0.종료");
+			System.out.println("------------------------------");
+			stop=true
+		}
+	}
+}

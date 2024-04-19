@@ -1,0 +1,12 @@
+package am;
+
+public class Sub02 {
+	public static void run() {
+		System.out.println("클래스란?");
+		Student s1=new Student();
+		s1.no="100";
+		s1.name="홍길동";
+		s2.juso="인천";
+	}
+
+}

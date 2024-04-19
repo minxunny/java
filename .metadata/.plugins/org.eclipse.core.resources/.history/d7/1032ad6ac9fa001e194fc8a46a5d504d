@@ -1,0 +1,13 @@
+package juso;
+
+import java.util.*;
+
+public class JusoDAO { //DAO:Data Access Object
+	//주소목록 (여러개의 타입을 넣을땐 어레이리스트)
+	public ArrayList<Juso>  list(){
+		ArrayList<Juso> array=new ArrayList<Juso>();
+		
+		return array;
+	}
+	
+}

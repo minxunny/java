@@ -1,0 +1,10 @@
+package juso;
+
+public class juso {
+	//필드
+	private int no; //계산할건지 생각해서 인트 or 스트링으로 하면됨. 지금같은 경우에는 no마다 1씩 증가해야되서 인트로 한것임, 연산할거아니면 스트링도 됨(주민번호 이런거)
+	private String name;
+	private String address;
+	
+
+}

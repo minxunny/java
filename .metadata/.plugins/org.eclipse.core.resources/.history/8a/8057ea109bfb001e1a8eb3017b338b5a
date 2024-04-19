@@ -1,0 +1,5 @@
+package professors;
+
+public class ProVO { //교수정보를 저장할 자바빈
+
+}

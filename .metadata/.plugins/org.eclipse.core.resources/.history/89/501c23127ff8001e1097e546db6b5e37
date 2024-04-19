@@ -1,0 +1,15 @@
+package am;
+
+public class Car { //자바빈
+	//필드(속성)
+	private int no;
+	private String company; //private : 속성들을 밖에서 함부로 못 바꾸게 하는 것
+	private String model;
+	private String color;
+	private int distance;
+	private String date;
+	
+
+	
+
+}

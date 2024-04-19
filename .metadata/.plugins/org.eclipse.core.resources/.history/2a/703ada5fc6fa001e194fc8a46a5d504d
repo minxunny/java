@@ -1,0 +1,8 @@
+package juso;
+
+public class juso {
+	//필드
+	private int no;
+	
+
+}

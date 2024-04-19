@@ -1,0 +1,9 @@
+package am;
+
+import java.util.*;
+
+public class Sub03 {
+	public static void run() {
+		ArrayList<Score> scores=new ArrayList<>();
+	}
+}

@@ -1,0 +1,16 @@
+package am;
+
+import java.util.*;
+
+public class Sub01 {
+	public static void run() {
+		ArrayList<Car> cars=new ArrayList<>();
+		
+		Car car1=new Car("기아","K7","검정",3000);
+		cars.add(car1);
+		for(Car car:cars) { //cars에서 car를 한대씩 가져와서 넣은것
+			System.out.println(car.toString());
+			System.out.println("");
+		}
+	}
+}

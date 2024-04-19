@@ -1,0 +1,5 @@
+package product;
+
+public class ProductVO { //자바빈=VO
+	
+}

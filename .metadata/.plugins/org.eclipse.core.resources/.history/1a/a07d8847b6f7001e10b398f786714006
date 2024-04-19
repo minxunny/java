@@ -1,0 +1,59 @@
+package am;
+
+public class Score {
+	//필드(속성)
+	String name;
+	int kor;
+	int eng;
+	int mat;
+	
+	//생성자
+	public Score() {
+		
+	}
+	
+	
+	//생성자2
+	public Score(String name, int kor, int eng, int mat) {
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.mat = mat;
+	}
+
+
+
+	//메서드
+	public int total() {
+		int total=kor+eng+mat; //int로 하면 강제형변환이 되서 오류남.
+		return total;
+	}
+	
+	public double avg() {
+		return (kor+eng+mat)/3.;
+	}
+	
+	public void print() {
+		System.out.printf("%s\t%d\t%d\t%d\t%d\t%.2f\n",name,kor,eng,mat,total(),avg(),grade());
+	}
+	
+	public String grade() {
+		String grade="F";
+		if(score>=90) {
+			if(score>=95) {
+				grade="A+";
+			}else {
+				grade="A0";
+			}
+		}else if(score>=80) {
+			grade="B";
+		}else if(score>=70) {
+			grade="C";
+		}else if(score>=60) {
+			grade="D";
+		}else {
+			grade="F";
+		}
+		return grade;
+	}
+}

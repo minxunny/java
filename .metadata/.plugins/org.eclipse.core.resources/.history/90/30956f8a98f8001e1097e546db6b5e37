@@ -1,0 +1,16 @@
+package pm;
+
+import java.io.*;
+
+public class Sub01 {
+	public static void run() {
+		File file=new File("c:/data/java/car.txt");
+		try {
+			BufferedReader readr=new BufferedReader(new FileReader(file)); //파일에서 읽어온 양식을 버퍼에 넣어준것
+			System.out.println("읽기성공");
+			
+		}catch(Exception e) { //try에서 파일을 못 읽어들일때
+			System.out.println("오류:"+e.toString());
+		}
+	}
+}

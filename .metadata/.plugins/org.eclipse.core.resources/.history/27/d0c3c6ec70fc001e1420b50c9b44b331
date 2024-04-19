@@ -1,0 +1,41 @@
+package product;
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		boolean run = true;
+		Scanner scanner = new Scanner(System.in);
+		ProductDAO dao=new ProductDAO();
+		
+		while(run) {
+			System.out.println("\n=========================================");
+			System.out.println("1.상품등록|2.상품조회|3.상품목록|4.상품삭제|0.종료");
+			System.out.println("=========================================");
+			System.out.print("선택>");
+			String menu= scanner.nextLine();
+			switch(menu) {
+			case "1" :
+				break;
+			case "2" : //상품조회
+				System.out.println("조회할상품코드>");
+				String code2=scanner.nextLine();
+				break;
+			case "3" : //상품목록
+				ArrayList<ProductVO> array=dao.list();
+				for(ProductVO vo:array) {
+					System.out.println(vo.toString());
+				}
+				break;
+			case "4" :
+				break;
+			case "0" :
+				System.out.println("프로그램을 종료합니다.");
+				run = false;
+				break;
+			default:
+				System.out.println("0~4 메뉴를 입력하세요!");
+				break;
+			}//switch   
+		}//while
+	}
+}

@@ -1,0 +1,15 @@
+package am;
+
+public class Sub02 {
+	public static void run() {
+		System.out.println("클래스란?");
+		Student s1=new Student(); //Student가 붕어빵틀이고 s1이 붕어빵이 되는 것!! 모양도 내용물도 같다
+		s1.no="100";
+		s1.name="홍길동";
+		s1.juso="인천";
+		s1.phone="010-2020-3030";
+		s1.print();
+		
+	}
+
+}

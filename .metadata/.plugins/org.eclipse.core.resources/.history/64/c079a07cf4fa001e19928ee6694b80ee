@@ -1,0 +1,16 @@
+package sale;
+
+import java.io.*;
+import java.util.*;
+
+public class SaleDAO {
+	File file=new File("c:/data/java/ex05/sale.txt");
+	
+	//매출목록
+	public ArrayList<Sale> list(){
+		ArrayList<Sale> array=new ArrayList<Sale>();
+		
+		return array;
+	}
+
+}

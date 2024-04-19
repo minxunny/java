@@ -1,0 +1,13 @@
+package pm;
+
+public class Main {
+
+	public static void main(String[] args) { //void : 메소드를 실행하는데 리턴값이 없을때
+		// TODO Auto-generated method stub
+		Sub01.run();
+		//Sub01 sub=new Sub01();
+		//sub.run();
+
+	}//
+
+}//class

@@ -1,0 +1,12 @@
+package professors;
+
+public class Database {
+	public static Connection CON;
+	static {
+		try {
+			
+		}catch(Exception e) {
+			System.out.println("접속실패:"+e.toString());
+		}
+	}
+}

@@ -1,0 +1,9 @@
+package sale;
+
+public class Sale { //자바빈(=VO)
+	private int code;
+	private String name;
+	private int price;
+	private int qnt;
+
+}

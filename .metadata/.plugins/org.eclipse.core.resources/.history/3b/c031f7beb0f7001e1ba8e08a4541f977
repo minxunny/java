@@ -1,0 +1,11 @@
+package am;
+
+public class Score {
+	//필드
+	String name;
+	int kor;
+	int eng;
+	int mat;
+	
+	
+}

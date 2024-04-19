@@ -1,0 +1,20 @@
+package am;
+
+public class Score {
+	//필드(속성)
+	String name;
+	int kor;
+	int eng;
+	int mat;
+	
+	//생성자
+	public Score() {
+		
+	}
+	
+	//메서드
+	public double total() {
+		double total=kor+eng+mat; //int로 하면 강제형변환이 되서 오류남.
+		return total;
+	}
+}

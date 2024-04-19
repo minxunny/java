@@ -1,0 +1,77 @@
+package am;
+
+public class Car { //자바빈
+	//필드(속성)
+	private String company; //private : 속성들을 밖에서 함부로 못 바꾸게 하는 것
+	private String model;
+	private String color;
+	private int distance;
+	private String date;
+	
+	
+	//기본생성자(생략해도됨)
+	public Car() {
+		
+	}
+	
+	
+	//생성자2(소스-제너레이팅유징필드)
+	public Car(String company, String model, String color, int distance) {
+		super();
+		this.company = company;
+		this.model = model;
+		this.color = color;
+		this.distance = distance;
+	}
+	
+	
+	public String getCompany() {
+		return company; //company값을 리턴한다
+	}
+
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
+
+
+	public String getModel() {
+		return model;
+	}
+
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+
+	public String getColor() {
+		return color;
+	}
+
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+
+	public int getDistance() {
+		return distance;
+	}
+
+
+	public void setDistance(int distance) {
+		this.distance = distance;
+	}
+
+
+	public String getDate() {
+		return date;
+	}
+
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+}

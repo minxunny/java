@@ -1,0 +1,6 @@
+package sale;
+
+public class SaleDAO {
+	//매출현황
+	
+}

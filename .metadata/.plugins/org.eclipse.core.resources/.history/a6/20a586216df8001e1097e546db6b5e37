@@ -1,0 +1,35 @@
+package am;
+
+public class Car {
+	//필드(속성)
+	String company;
+	String model;
+	String color;
+	int distance;
+	String date;
+	
+	//기본생성자(생략해도됨)
+	public Car() {
+		
+	}
+	
+	//생성자
+	public Car(String company, String model, String color, int distance, String date) {
+		super();
+		this.company = company;
+		this.model = model;
+		this.color = color;
+		this.distance = distance;
+		this.date = date;
+	}
+	
+	//메소드
+	public void print() {
+		System.out.println("회사:"+company);
+		System.out.println("모델:"+model);
+		System.out.println("색상:"+color);
+		System.out.println("주행거리:"+distance);
+		System.out.println("년식:"+date);
+	}
+
+}

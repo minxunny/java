@@ -1,0 +1,8 @@
+package pm;
+
+public class Sun02 {
+	public static void run() {
+		File file=new File("c:/data/java/address.txt");
+	}
+
+}

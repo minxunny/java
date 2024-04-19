@@ -1,0 +1,7 @@
+package product;
+import java.util.*;
+
+public interface ProductInter {
+	public ArrayList<ProductVO> list();
+
+}

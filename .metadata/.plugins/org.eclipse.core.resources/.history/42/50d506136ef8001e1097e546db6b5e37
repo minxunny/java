@@ -1,0 +1,32 @@
+package am;
+
+import java.util.*;
+
+public class Sub01 {
+	public static void run() {
+		ArrayList<Car> cars=new ArrayList<>();
+		
+		Car car1=new Car();
+		car1.company="현대";
+		car1.model="그랜저";
+		car1.color="검정";
+		car1.distance=60000;
+		car1.date="2021-06";
+		cars.add(car1); //car1을 car라는 클래스에 넣는다.
+		
+		Car car2=new Car();
+		car2.company="기아";
+		car2.model="모닝";
+		car2.color="아이보리";
+		car2.distance=3000;
+		car2.date="2023-01";
+		cars.add(car2);
+		
+		car1=new Car("기아","K7","검정",3000);
+		cars.add(car1);
+		for(Car car:cars) { //cars에서 car를 한대씩 가져와서 넣은것
+			car.print();
+			System.out.println("");
+		}
+	}
+}

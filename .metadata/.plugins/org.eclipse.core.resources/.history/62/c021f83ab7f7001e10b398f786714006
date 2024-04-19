@@ -1,0 +1,9 @@
+package am;
+
+import java.util.*;
+
+public class Sub02_1 {
+	public static void run() {
+		ArrayList<student> students=new ArrayList<>();
+	}
+}

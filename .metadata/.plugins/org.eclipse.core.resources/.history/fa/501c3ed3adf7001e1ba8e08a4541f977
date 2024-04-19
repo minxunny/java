@@ -1,0 +1,17 @@
+package am;
+
+public class Student {
+	//필드(class가 모두 가질 수 있는 속성)
+	String no;
+	String name;
+	String juso;
+	String phone;
+	
+	//생성자
+	public Student() {
+		
+	}
+	
+	//
+	
+}

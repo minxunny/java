@@ -1,0 +1,16 @@
+package sale;
+import java.util.*;
+
+public class SaleDAO {
+	//매출현황
+	public ArrayList<SaleVO> list(){
+		ArrayList<SaleVO> array=new ArrayList<SaleVO>();
+		try {
+			
+		}catch(Exception e) {
+			System.out.println("매출현황:");
+		}
+		
+		return array;
+	}
+}
