@@ -181,6 +181,9 @@ from Students s, enrollments e, courses c
 where s.scode=e.scode and c.lcode=e.lcode;
 
 /*학번, 학생들이 수강신청 한 강좌번호, 강좌명, 성적을 검색하시오.*/
+select scode, e.lcode, lname, grade
+from enrollments e, courses c
+where e.lcode=c.lcode;
 
 /*'이병렬'과 교수가 지도하는 학생들의 이름, 학년, 생년월일을 검색하시오*/
 select sname,year,birthday
@@ -188,16 +191,49 @@ from Students , professors
 where advisor=pcode and pcode=221;
 
 /*'98/03/03'에 수강신청 한 학생들의 학번, 학생이름, 강좌번호를 검색하시오.*/
+select e.scode, sname, lcode
+from Students s, enrollments e
+where edate!='98/03/03' and e.scode=s.scode;
+
 /*'전산'과 교수들이 지도하는 학생들의 이름, 학년, 생년월일을 검색하시오.*/
+select sname, year, birthday
+from Students s, professors p
+where advisor=pcode and p.dept='전산';
+
 /*자료구조'를 강의하는 교수의 학과명, 교수 명을 검색하시오.*/
+select dept,pname
+from professors p, courses c
+where lname='자료구조' and instructor=pcode;
+
 /*'파일처리론'을 수강신청 한 학생들의 학번, 수강신청일, 점수를 검색하시오.*/
+select s.scode, edate, grade
+from Students s, enrollments e, courses c
+where lname='파일처리론' and e.lcode=c.lcode and e.scode=s.scode;
+
 /*'자료구조' 과목을 수강신청 한 학생들의 학과, 학생이름, 성적을 검색하시오.*/
+select dept,sname,grade
+from Students s, enrollments e, courses c
+where lname='자료구조' and c.lcode=e.lcode and e.scode=s.scode;
+
 /*'전자'과 학생들의 학번, 학생이름, 수강신청 한 강좌번호, 강좌 명, 성적을 검색하시오.*/
+select s.scode, sname, c.lcode, lname ,grade
+from Students s, enrollments e, courses c
+where dept='전자' and s.scode=e.scode and c.lcode=e.lcode;
+
 /*'파일처리론'을 강의하는 교수의 이름, 이 교수가 지도하는 학생들의 학번, 학생명을 검색하시오.*/
+select pname, s.scode, sname
+from professors p, courses c, Students s
+where lname='파일처리론' and pcode=instructor and p.dept=s.dept;
+
 /*'데이터베이스'를 강의하는 교수명, 이 과목을 수강신청 한 학생들의 학과, 이름, 성적을 검색하시오.*/
+select pname, s.dept, sname, grade
+from professors p, enrollments e, Students s ,courses c
+where lname='데이터베이스' and instructor=pcode and c.lcode=e.lcode and e.scode=s.scode;
+
 /*성적이 80점 이상인 학생들의 학번, 학생이름, 강좌번호, 강좌명, 담당교수 명을 검색하시오.*/
-
-
+select s.scode, sname, e.lcode, lname, pname
+from professors p, courses c, Students s , enrollments e
+where grade>=80 and e.scode=s.scode and e.lcode=c.lcode and instructor=pcode;
 
 
 
