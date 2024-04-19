@@ -161,3 +161,43 @@ select *
 from students
 where dept='전산'
 order by sname asc, birthday desc;
+
+/*학생들의 학과, 학생이름, 지도교수이름을 검색하시오.*/
+select s.dept, s.sname, p.pname, p.dept
+from students s, professors p
+where p.pcode=s.advisor;
+
+select * from students where advisor in
+(select pcode from professors);
+
+/*강좌번호, 강좌명, 교수이름을 검색하시오.*/
+select lcode, lname, pname
+from courses , professors
+where pcode=instructor;
+
+/*학번, 학생이름, 학생들이 수강신청 한 강좌번호, 수강신청일을 검색하시오*/
+select e.edate,s.sname,e.lcode, c.lname, e.grade
+from Students s, enrollments e, courses c
+where s.scode=e.scode and c.lcode=e.lcode;
+
+/*학번, 학생들이 수강신청 한 강좌번호, 강좌명, 성적을 검색하시오.*/
+
+/*'이병렬'과 교수가 지도하는 학생들의 이름, 학년, 생년월일을 검색하시오*/
+select sname,year,birthday
+from Students , professors
+where advisor=pcode and pcode=221;
+
+/*'98/03/03'에 수강신청 한 학생들의 학번, 학생이름, 강좌번호를 검색하시오.*/
+/*'전산'과 교수들이 지도하는 학생들의 이름, 학년, 생년월일을 검색하시오.*/
+/*자료구조'를 강의하는 교수의 학과명, 교수 명을 검색하시오.*/
+/*'파일처리론'을 수강신청 한 학생들의 학번, 수강신청일, 점수를 검색하시오.*/
+/*'자료구조' 과목을 수강신청 한 학생들의 학과, 학생이름, 성적을 검색하시오.*/
+/*'전자'과 학생들의 학번, 학생이름, 수강신청 한 강좌번호, 강좌 명, 성적을 검색하시오.*/
+/*'파일처리론'을 강의하는 교수의 이름, 이 교수가 지도하는 학생들의 학번, 학생명을 검색하시오.*/
+/*'데이터베이스'를 강의하는 교수명, 이 과목을 수강신청 한 학생들의 학과, 이름, 성적을 검색하시오.*/
+/*성적이 80점 이상인 학생들의 학번, 학생이름, 강좌번호, 강좌명, 담당교수 명을 검색하시오.*/
+
+
+
+
+
